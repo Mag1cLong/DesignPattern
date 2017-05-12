@@ -11,7 +11,7 @@ import java.lang.reflect.Proxy;
 /**
  * Created by Administrator on 2017/5/12.
  */
-public class DynamiProxy implements InvocationHandler {
+public class DynamicProxy implements InvocationHandler {
     private Object target;
 
     @Override
@@ -29,7 +29,7 @@ public class DynamiProxy implements InvocationHandler {
     }
 
     public static void main(String[] args) {
-        DynamiProxy proxy = new DynamiProxy();
+        DynamicProxy proxy = new DynamicProxy();
         Subject target = (Subject) proxy.newInstance(new RealSubject());
         target.oper();
     }
