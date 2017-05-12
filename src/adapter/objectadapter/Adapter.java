@@ -16,7 +16,7 @@ public class Adapter implements Target {
     }
 
     public static void main(String[] args) {
-        Adapter adapter = new Adapter(new Adaptee());
+        Target adapter = new Adapter(new Adaptee());
         adapter.request();
     }
 }
