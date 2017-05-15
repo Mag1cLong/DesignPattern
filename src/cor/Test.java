@@ -1,6 +1,7 @@
 package cor;
 
 /**
+ * 责任链模式
  * Created by Administrator on 2017/5/15.
  */
 public class Test {
